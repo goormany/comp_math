@@ -78,7 +78,6 @@ int main(){
         delta = d;
         double root = HORDA(left, right, eps, iter);
         std::cout << delta << "\t" << root << "\t\t" << iter << std::endl;
-
     }
 
     return 0;
