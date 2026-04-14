@@ -274,10 +274,7 @@ int main(int argc, char *argv[]) {
 
   std::vector<double> solution;
   double compute_time = 0.0;
-  auto *orig = std::cout.rdbuf();
-  std::cout.rdbuf(NULL);
   SolutionType result = solveGaussian(matrix, solution, compute_time);
-  std::cout.rdbuf(orig);
 
   std::cout << "\033[4m\033[1mFinal Result\033[0m\n";
   std::cout << "Solution type: " << solutionTypeToString(result) << "\n";
